@@ -1,12 +1,9 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     url: 'jdbc:mysql://localhost:3306/tiketeraDB?zeroDateTimeBehavior=convertToNull&serverTimezone=UTC'
     password: password
     username: root
-    
   jpa:
     hibernate:
-      ddl-auto: update      
-server:
-   port: 8084
+      ddl-auto: update
