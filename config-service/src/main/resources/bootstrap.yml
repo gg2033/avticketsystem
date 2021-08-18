@@ -1,0 +1,24 @@
+logging:
+    level: DEBUG
+server:
+    port: 8081
+spring:
+    application:
+        name: config-server
+    cloud:
+        config:
+            enabled: false
+            label: main
+            server:
+                git:
+                    default-label: main
+                    password: ${GIT_PASSWORD}
+                    searchPaths: config-data
+                    uri: file:///C:/Users/User/Desktop/proyectos/ticketera-back-microservice
+                    username: ggennariAmerica
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    security:
+        user:
+            name: root
+            password: s3cr3t
